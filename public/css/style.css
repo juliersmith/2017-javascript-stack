@@ -2,7 +2,8 @@
 body {
   width: 960px;
   margin: auto;
-  font-family: sans-serif;
+  padding:20px;
+  font-family: lato, sans-serif;
 }
 
 h1 {
