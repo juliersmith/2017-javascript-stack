@@ -1,5 +1,5 @@
 {
-  "name": "js-stack-from-scratch-08",
+  "name": "2017-javascript-stack",
   "description": "Tutorial from https://github.com/verekia/js-stack-from-scratch through chapter 08.",
   "version": "1.0.0",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "scripts": {
     "start": "yarn dev:start",
     "dev:start": "nodemon -e js,jsx --ignore lib --ignore dist --exec babel-node src/server",
+    "wds": "yarn dev:wds",
     "dev:wds": "webpack-dev-server --progress",
     "prod:build": "rimraf lib dist && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
